@@ -2,7 +2,7 @@
 <html>
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/vuetify@1.5.24/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <style>
@@ -80,8 +80,8 @@
                       {{todo.title | capitalize}}
                     </v-list-tile-title>
                     <v-list-tile-sub-title>
-                      Добавлено в: {{todo.createdAt | date(true)}}
-                      (изменено {{todo.updatedAt | date(true)}})
+                      Добавлено в: {{todo.createdAt | date(true)}} 
+                      (измененено {{todo.updatedAt | date(true)}})
                     </v-list-tile-sub-title>
                   </v-list-tile-content>
                   <v-btn icon ripple color="red" @click="removeTodo(todo.id)">
@@ -98,7 +98,7 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vuetify@1.5.24/dist/vuetify.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
 <script src="/app.js"></script>
 </body>
 </html>
