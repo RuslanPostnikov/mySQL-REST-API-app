@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/todo', todoRoutes);
 
 app.use((req, res, next) => {
-    res.sendFile('/index.html');
+    res.sendFile( './index.html');
 });
 
 async function start() {
